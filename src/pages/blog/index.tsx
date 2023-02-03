@@ -16,7 +16,6 @@ export default function Blog({ data }: PageProps<Queries.BlogPostsQuery>) {
               </h5>
               <h6>{file.frontmatter?.date}</h6>
               <p>{file.excerpt}</p>
-              <hr />
             </Link>
           </article>
         ))}
