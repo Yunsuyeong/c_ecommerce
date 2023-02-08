@@ -28,9 +28,18 @@ const config: GatsbyConfig = {
       resolve: `gatsby-source-filesystem`,
       options: {
         // The unique name for each instance
-        name: `pages`,
+        name: `blogpages`,
         // Path to the directory
         path: `${__dirname}/blog-posts`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `intropages`,
+        // Path to the directory
+        path: `${__dirname}/introduces`,
       },
     },
   ],
