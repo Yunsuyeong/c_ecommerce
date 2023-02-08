@@ -26,7 +26,7 @@ export default function Blog({ data }: PageProps<Queries.BlogPostsQuery>) {
 
 export const query = graphql`
   query BlogPosts {
-    allMdx {
+    allMdx(filter: { frontmatter: { author: { eq: "니코" } } }) {
       nodes {
         frontmatter {
           slug
